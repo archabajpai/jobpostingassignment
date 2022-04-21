@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Post Job</h1>
+    <h2 id="first-colorhead">Basic Details</h2>
+
+    <hr>
+    <form action="">
+        Job Title*
+        <br>
+        <br>
+        <textarea name="describe" id="describe" cols="50"  placeholder="Write a title that appropriately describes this job"></textarea>
+        <br>
+        <br>
+        Location*
+        <br>
+        <br>
+
+<select id="location-select">
+    <option value="">Add Location</option>
+    <option value="Australia">Australia</option>
+    <option value="India">India</option>
+    <option value="China">China</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Russia">Russia</option>
+</select>
+       
+        <br>
+        <br>
+        Years of Experience*
+        <br>
+        <br>
+      
+        <select id="min-select">
+            <option value="">Select Min</option>
+            <option value="zero">0</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+        </select>
+        <select id="max-select">
+            <option value="">Select Max</option>
+            <option value="4-5">4-5</option>
+            <option value="5-6">5-6</option>
+            <option value="6-7">6-7</option>
+            <option value="7-8">7-8</option>
+            <option value="9-10">9-10</option>
+        </select>
+          <br>
+          <br>
+          Job Description*
+          <br>
+          <br>
+          <textarea name="" id="" cols="50" rows="5" placeholder="Describe the role and responsibilities,skilles required for the job and help the candidates understand the role better"></textarea>
+
+
+    </form>
+    <h2 id="second-colorhead"> Targeting</h2>
+    <hr>
+     Category*
+     <br>
+     <select id="cat-select">
+        <option value="">Select</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Sales">Sales</option>
+        <option value="Teaching">Teaching</option>
+        <option value="Content Writing">Content Writing</option>
+        <option value="Marketing">Marketing</option>
+    </select>
+    <br>
+    <br>
+    Functional Area*
+    <br>
+    
+    <select id="func-select">
+       <option value="">Select</option>
+       <option value="Senior head">Senior head</option>
+       <option value="Part-time">Part-time</option>
+       <option value="Full-time">Full-time</option>
+       <option value="Internship">Internship</option>
+   </select>
+   <br>
+   <br>
+   Graduating Year*
+   <br>
+   
+   <select id="min-batch">
+    <option value="">Min Batch</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+ 
+</select>
+<select id="max-batch">
+    <option value="">Max Batch </option>
+    <option value="2005-2009">2005-2009</option>
+    <option value="2010-2014">2010-2014</option>
+    <option value="2014-2018">2014-2018</option>
+    
+</select>
+<br>
+<br>
+Tags
+<br>
+<br>
+<input type="search" name="" id="" placeholder="Add Job Tag">
+<br>
+<br>
+<br>
+<a href="localhost:8001/v1jobs/job" target="main">
+<button id="post"  onclick="location.href='localhost:8001/v1jobs/job'">Post Job</button>
+</a>
+<button id="postt">Post Job and add another job</button>
+<a href="">Cancel</a>
+
+
+
+
+</body>
+</html>
